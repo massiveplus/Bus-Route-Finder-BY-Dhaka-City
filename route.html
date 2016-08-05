@@ -1,0 +1,421 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=x-euc-jp">
+<HTML><HEAD>
+<TITLE>Bus Route Finder by Dhaka Cit</h1></TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!----
+
+function brDetection(){
+var brAgent = navigator.userAgent.toLowerCase();
+this.brVer = parseInt(navigator.appVersion);
+this.brVerDot = parseFloat(navigator.appVersion);
+this.ns = ((brAgent.indexOf('mozilla') != -1) && ((brAgent.indexOf('spoofer') == -1) && (brAgent.indexOf('compatible') == -1)));
+this.ns2 = (this.ns && (this.brVer == 3));
+this.ns3 = (this.ns && (this.brVer == 3));
+this.ns4b = (this.ns && (this.brVerDot < 4.04));
+this.ns4 = (this.ns && (this.brVer >= 4));
+this.ie = (brAgent.indexOf("msie") != -1);
+this.ie3 = (this.ie && (this.brVer <= 3));
+this.ie4 = (this.ie && (this.brVer == 4));
+this.ie5 = (this.ie && (this.brVer >= 5));
+this.op = (brAgent.indexOf("opera") != -1);
+this.mac = (brAgent.indexOf("mac") != -1);
+this.win = (brAgent.indexOf("win") != -1);
+this.unix = (brAgent.indexOf("x11") != -1);
+}
+var brID = new brDetection();
+if (brID.mac) {
+document.write ('<link rel="stylesheet" type="text/css" href="/styles/macStyles.css">')
+}
+if ((brID.win) && (brID.ns4)) {
+document.write ('<link rel="stylesheet" type="text/css" href="/styles/winNSStyles.css">')
+}
+if ((brID.win) && (brID.ie)) {
+document.write ('<link rel="stylesheet" type="text/css" href="/styles/winIEStyles.css">')
+}
+
+
+//---->
+</SCRIPT>
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF TEXT=#000000 LINK=#0000FF VLINK=darkgreen leftmargin="8" marginheight="8" marginwidth="8">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="740" >
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" >
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="740" >
+<TR>
+<TD ROWSPAN="2" ALIGN="LEFT" VALIGN="TOP" >
+</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" >
+<b>Bangladesh Road Transport Authority</b></TR>
+<TR>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" BGCOLOR="#EEEEEE" WIDTH="563" >
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="2" HEIGHT=25>
+<TR>
+<TD ALIGN="LEFT" VALIGN="MIDDLE" >
+<A HREF="Bus Route Finder By Dhaka City"><B><FONT CLASS="td" COLOR="#333366" ></FONT></B></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD HEIGHT="20" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="20" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER" VALIGN="TOP" >
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="730" >
+<TR>
+<TD ALIGN="CENTER" VALIGN="TOP" >
+<h3>Bus Route Finder By Dhaka City</h3></TD>
+</TR>
+<TR>
+<TD HEIGHT="10" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="10" ALT="" ></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+<FORM NAME="FM_key" ACTION="/norikae/cgi-bin/engkeyin.cgi" METHOD="POST">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="740" >
+<TR>
+<TD ALIGN="CENTER" VALIGN="TOP" >
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="730" >
+<TR>
+<TD COLSPAN="3" HEIGHT="10" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="10" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" BGCOLOR="#FF8F00" WIDTH="20" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="20" HEIGHT="1" ALT="" ></TD>
+<TD ALIGN="LEFT" VALIGN="BOTTOM" BGCOLOR="#FF8F00" >
+<div style="height: 25px;"></div></TD>
+<TD ALIGN="RIGHT" VALIGN="BOTTOM" BGCOLOR="#FF8F00" >
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" BGCOLOR="#FFCC00" HEIGHT="1" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="1" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" BGCOLOR="#FFFFE0" WIDTH="20" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="20" HEIGHT="1" ALT="" ></TD>
+<TD COLSPAN="2" ALIGN="LEFT" VALIGN="TOP" BGCOLOR="#FFFFE0" >
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" >
+<TR>
+<TD COLSPAN="6" BGCOLOR="#FFFFE0" HEIGHT="20" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="20" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="1" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="1" ALT="" ></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" >
+<B><FONT CLASS="td" COLOR="#000066" >Departs</FONT></B></TD>
+<TD ALIGN="RIGHT" VALIGN="TOP" >
+</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="1" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="1" ALT="" ></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" >
+<B><FONT CLASS="td" COLOR="#000066" >Arrives</FONT></B></TD>
+<TD ALIGN="RIGHT" VALIGN="TOP" >
+</TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="MIDDLE" >
+<B><FONT CLASS="td" COLOR="#000066" >BusStop:</FONT></B></TD>
+<TD COLSPAN="2" ALIGN="LEFT" VALIGN="MIDDLE" >
+<SELECT NAME="Sseat">
+<OPTION VALUE="0" SELECTED>Abdullahpur</OPTION>
+<OPTION VALUE="1">Agargaon</OPTION>
+<OPTION VALUE="2">Airport</OPTION>
+<OPTION VALUE="3">Kalshi(Mirpur Section 12)</OPTION>
+<OPTION VALUE="4">Sign board</OPTION>
+<OPTION VALUE="5">pallabi(Mirpur Section 12)</OPTION>
+<OPTION VALUE="6">Sadar ghat</OPTION>
+<OPTION VALUE="7">pallabi(Bdr shopping master counter)</OPTION>
+<OPTION VALUE="8">Jatrabari</OPTION>
+<OPTION VALUE="9">Bongobondhu avenue</OPTION>
+<OPTION VALUE="10">Pallabi(Duaripara)</OPTION>
+<OPTION VALUE="11">Dhakeshwari mandir</OPTION>
+<OPTION VALUE="12">Narayanganj link road</OPTION>
+<OPTION VALUE="13">Pallabi(shramik)</OPTION>
+<OPTION VALUE="14">Kamla pur</OPTION>
+<OPTION VALUE="16">Demra ghat</OPTION>
+<OPTION VALUE="17">Gulistan</OPTION>
+<OPTION VALUE="18">Notordem college</OPTION>
+<OPTION VALUE="19">Zero point</OPTION>
+
+</SELECT>
+</TD>
+<TD ALIGN="Left" VALIGN="MIDDLE" >
+<INPUT TYPE="image" NAME="Bchange" VALUE="Bchange" SRC="/english/norikae/image/keyin_change.gif"  BORDER=0>
+</TD>
+<TD COLSPAN="2" ALIGN="LEFT" VALIGN="MIDDLE" >
+<SELECT NAME="Sseat">
+ VALUE="0" SELECTED>Abdullahpur</OPTION>
+<OPTION VALUE="1">Agargaon</OPTION>
+<OPTION VALUE="2">Airport</OPTION>
+<OPTION VALUE="3">Kalshi(Mirpur Section 12)</OPTION>
+<OPTION VALUE="4">Sign board</OPTION>
+<OPTION VALUE="5">pallabi(Mirpur Section 12)</OPTION>
+<OPTION VALUE="6">Sadar ghat</OPTION>
+<OPTION VALUE="7">pallabi(Bdr shopping master counter)</OPTION>
+<OPTION VALUE="8">Jatrabari</OPTION>
+<OPTION VALUE="9">Bongobondhu avenue</OPTION>
+<OPTION VALUE="10">Pallabi(Duaripara)</OPTION>
+<OPTION VALUE="11">Dhakeshwari mandir</OPTION>
+<OPTION VALUE="12">Narayanganj link road</OPTION>
+<OPTION VALUE="13">Pallabi(shramik)</OPTION>
+<OPTION VALUE="14">Kamla pur</OPTION>
+<OPTION VALUE="16">Demra ghat</OPTION>
+<OPTION VALUE="17">Gulistan</OPTION>
+<OPTION VALUE="18">Notordem college</OPTION>
+<OPTION VALUE="19">Zero point</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="6" BGCOLOR="#FFFFE0" HEIGHT="15" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="15" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="MIDDLE" >
+<B><FONT CLASS="td" COLOR="#000066" >Date:</FONT></B></TD>
+<TD COLSPAN="5" ALIGN="LEFT" VALIGN="MIDDLE" NOWRAP>
+<SELECT NAME="Dyyyymm">
+<OPTION VALUE="201605">May/2016</OPTION>
+<OPTION VALUE="201606">Jun/2016</OPTION>
+<OPTION VALUE="201607"SELECTED>Jul/2016</OPTION>
+<OPTION VALUE="201608">Aug/2016</OPTION>
+<OPTION VALUE="201609">Sep/2016</OPTION>
+<OPTION VALUE="201610">Oct/2016</OPTION>
+<OPTION VALUE="201611">Nov/2016</OPTION>
+<OPTION VALUE="201612">Dec/2016</OPTION>
+<OPTION VALUE="201701">Jan/2017</OPTION>
+<OPTION VALUE="201702">Feb/2017</OPTION>
+<OPTION VALUE="201703">Mar/2017</OPTION>
+<OPTION VALUE="201704">Apr/2017</OPTION>
+<OPTION VALUE="201705">May/2017</OPTION>
+<OPTION VALUE="201706">Jun/2017</OPTION>
+</SELECT>
+<SELECT NAME="Ddd">
+<OPTION VALUE="01">1</OPTION>
+<OPTION VALUE="02">2</OPTION>
+<OPTION VALUE="03">3</OPTION>
+<OPTION VALUE="04">4</OPTION>
+<OPTION VALUE="05">5</OPTION>
+<OPTION VALUE="06">6</OPTION>
+<OPTION VALUE="07">7</OPTION>
+<OPTION VALUE="08">8</OPTION>
+<OPTION VALUE="09">9</OPTION>
+<OPTION VALUE="10">10</OPTION>
+<OPTION VALUE="11">11</OPTION>
+<OPTION VALUE="12">12</OPTION>
+<OPTION VALUE="13">13</OPTION>
+<OPTION VALUE="14">14</OPTION>
+<OPTION VALUE="15">15</OPTION>
+<OPTION VALUE="16">16</OPTION>
+<OPTION VALUE="17">17</OPTION>
+<OPTION VALUE="18">18</OPTION>
+<OPTION VALUE="19">19</OPTION>
+<OPTION VALUE="20">20</OPTION>
+<OPTION VALUE="21">21</OPTION>
+<OPTION VALUE="22">22</OPTION>
+<OPTION VALUE="23">23</OPTION>
+<OPTION VALUE="24">24</OPTION>
+<OPTION VALUE="25">25</OPTION>
+<OPTION VALUE="26">26</OPTION>
+<OPTION VALUE="27">27</OPTION>
+<OPTION VALUE="28">28</OPTION>
+<OPTION VALUE="29"SELECTED>29</OPTION>
+<OPTION VALUE="30">30</OPTION>
+<OPTION VALUE="31">31</OPTION>
+</SELECT>
+<SELECT NAME="Dhh">
+<OPTION VALUE="00">12 am</OPTION>
+<OPTION VALUE="01">1 am</OPTION>
+<OPTION VALUE="02">2 am</OPTION>
+<OPTION VALUE="03">3 am</OPTION>
+<OPTION VALUE="04">4 am</OPTION>
+<OPTION VALUE="05">5 am</OPTION>
+<OPTION VALUE="06">6 am</OPTION>
+<OPTION VALUE="07">7 am</OPTION>
+<OPTION VALUE="08">8 am</OPTION>
+<OPTION VALUE="09">9 am</OPTION>
+<OPTION VALUE="10">10 am</OPTION>
+<OPTION VALUE="11">11 am</OPTION>
+<OPTION VALUE="12">12 pm</OPTION>
+<OPTION VALUE="13">1 pm</OPTION>
+<OPTION VALUE="14"SELECTED>2 pm</OPTION>
+<OPTION VALUE="15">3 pm</OPTION>
+<OPTION VALUE="16">4 pm</OPTION>
+<OPTION VALUE="17">5 pm</OPTION>
+<OPTION VALUE="18">6 pm</OPTION>
+<OPTION VALUE="19">7 pm</OPTION>
+<OPTION VALUE="20">8 pm</OPTION>
+<OPTION VALUE="21">9 pm</OPTION>
+<OPTION VALUE="22">10 pm</OPTION>
+<OPTION VALUE="23">11 pm</OPTION>
+</SELECT>
+<SELECT NAME="Dmn">
+<OPTION VALUE="00">0</OPTION>
+<OPTION VALUE="01">1</OPTION>
+<OPTION VALUE="02">2</OPTION>
+<OPTION VALUE="03">3</OPTION>
+<OPTION VALUE="04">4</OPTION>
+<OPTION VALUE="05">5</OPTION>
+<OPTION VALUE="06">6</OPTION>
+<OPTION VALUE="07">7</OPTION>
+<OPTION VALUE="08">8</OPTION>
+<OPTION VALUE="09">9</OPTION>
+<OPTION VALUE="10">10</OPTION>
+<OPTION VALUE="11">11</OPTION>
+<OPTION VALUE="12">12</OPTION>
+<OPTION VALUE="13">13</OPTION>
+<OPTION VALUE="14">14</OPTION>
+<OPTION VALUE="15">15</OPTION>
+<OPTION VALUE="16">16</OPTION>
+<OPTION VALUE="17">17</OPTION>
+<OPTION VALUE="18">18</OPTION>
+<OPTION VALUE="19">19</OPTION>
+<OPTION VALUE="20">20</OPTION>
+<OPTION VALUE="21">21</OPTION>
+<OPTION VALUE="22">22</OPTION>
+<OPTION VALUE="23">23</OPTION>
+<OPTION VALUE="24">24</OPTION>
+<OPTION VALUE="25"SELECTED>25</OPTION>
+<OPTION VALUE="26">26</OPTION>
+<OPTION VALUE="27">27</OPTION>
+<OPTION VALUE="28">28</OPTION>
+<OPTION VALUE="29">29</OPTION>
+<OPTION VALUE="30">30</OPTION>
+<OPTION VALUE="31">31</OPTION>
+<OPTION VALUE="32">32</OPTION>
+<OPTION VALUE="33">33</OPTION>
+<OPTION VALUE="34">34</OPTION>
+<OPTION VALUE="35">35</OPTION>
+<OPTION VALUE="36">36</OPTION>
+<OPTION VALUE="37">37</OPTION>
+<OPTION VALUE="38">38</OPTION>
+<OPTION VALUE="39">39</OPTION>
+<OPTION VALUE="40">40</OPTION>
+<OPTION VALUE="41">41</OPTION>
+<OPTION VALUE="42">42</OPTION>
+<OPTION VALUE="43">43</OPTION>
+<OPTION VALUE="44">44</OPTION>
+<OPTION VALUE="45">45</OPTION>
+<OPTION VALUE="46">46</OPTION>
+<OPTION VALUE="47">47</OPTION>
+<OPTION VALUE="48">48</OPTION>
+<OPTION VALUE="49">49</OPTION>
+<OPTION VALUE="50">50</OPTION>
+<OPTION VALUE="51">51</OPTION>
+<OPTION VALUE="52">52</OPTION>
+<OPTION VALUE="53">53</OPTION>
+<OPTION VALUE="54">54</OPTION>
+<OPTION VALUE="55">55</OPTION>
+<OPTION VALUE="56">56</OPTION>
+<OPTION VALUE="57">57</OPTION>
+<OPTION VALUE="58">58</OPTION>
+<OPTION VALUE="59">59</OPTION>
+</SELECT>
+<label for="from"><INPUT TYPE="radio" NAME="Sfromto" VALUE="from" CHECKED id="from">
+<FONT CLASS="td" >Departure</FONT></label><label for="to"><INPUT TYPE="radio" NAME="Sfromto" VALUE="to"  id="to">
+<FONT CLASS="td" >Arrival</FONT></label></TD>
+</TR>
+<TR>
+<TD COLSPAN="6" HEIGHT="15" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="15" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="MIDDLE" >
+<B><FONT CLASS="td" COLOR="#000066" >Option:</FONT></B></TD>
+<TD COLSPAN="5" ALIGN="LEFT" VALIGN="MIDDLE" NOWRAP>
+<SELECT NAME="Option">
+<OPTION VALUE="0" SELECTED>Fastest route </OPTION>
+<OPTION VALUE="1">Shortest Route</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="6" HEIGHT="15" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="15" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="1" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="1" ALT="" ></TD>
+<TD COLSPAN="5" ALIGN="LEFT" VALIGN="TOP" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="submit" NAME="Find Route" VALUE=" Find Route " >
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="6" HEIGHT="8" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="8" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="1" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="1" ALT="" ></TD>
+<TD COLSPAN="5" ALIGN="LEFT" VALIGN="TOP" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT CLASS="tb" COLOR="#000066" ><b>Enter the bus stop name, and click find route button.</b></FONT></TD>
+</TR>
+<TR>
+<TD COLSPAN="6" HEIGHT="20" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="20" ALT="" ></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" HEIGHT="15" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="15" ALT="" ></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD HEIGHT="30" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="30" ALT="" ></TD>
+</TR>
+<TR>
+<TD HEIGHT="10" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="10" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="RIGHT" >
+</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FF9900" HEIGHT="1" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="1" ALT="" ></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#333366" HEIGHT="5" >
+<img SRC="/english/norikae/image/clear.gif" WIDTH="1" HEIGHT="5" ALT="" ></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" BGCOLOR="#EEEEEE" HEIGHT="20" >
+<FONT CLASS="tb" COLOR="#333333" ><b>Get the complete graph of Dhaka City Route Map.</b> </FONT></TD>
+
+</TR>
+<tr>
+     <Td bgcolor="#ffffff" align="right">
+
+	<A HREF="route.htm">Complete Map</A>
+	  
+       </Td></tr>
+</TABLE>
+<INPUT TYPE="hidden" NAME="Knorikae" VALUE="Knorikae" >
+<INPUT TYPE="hidden" NAME="proc_mode" VALUE="K" >
+<INPUT TYPE="hidden" NAME="proc_sw" VALUE="5" >
+<INPUT TYPE="hidden" NAME="proc_sw_sub" VALUE="0" >
+<INPUT TYPE="hidden" NAME="from_nm" VALUE="" >
+<INPUT TYPE="hidden" NAME="to_nm" VALUE="" >
+<INPUT TYPE="hidden" NAME="Sfrom_sw" VALUE="1" >
+</FORM></BODY></HTML>
